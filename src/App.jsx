@@ -10,6 +10,7 @@ import FetchApi from "./FetchApi";
 import UserList from "./UserList";
 import SimpleTodo from "./simpleTodo/SimpleTodo";
 import UseFetchComponent from "./useFetchCustomHook/UseFetchComponent";
+import UseLocalStorageComponent from "./useLocalStorageCustomHook/UseLocalStogareComponent";
 
 
 function App() {
@@ -23,12 +24,16 @@ function App() {
       <TodoList isChecked>Complete study</TodoList>
       <TodoList> Complete test</TodoList>
       <TodoListClass />
+
       {/* useState example */}
       <Counter />
+
       <h3>Array state project</h3>
       <ArrayStateProject />
+
       <h3>Counter with Name project</h3>
       <CounterwithNameProject />
+
       <h3>UseEffect excercise</h3>
       <div>
         <button onClick={() => setShow((currentShow) => !currentShow)}>
@@ -36,14 +41,21 @@ function App() {
         </button>
         {childComponent}
       </div>
+
       <FetchApi/>
+      
       <h3>Fetch userlist and map</h3>
       <UserList />
+
       <h3>Simple Todo Project</h3>
       <SimpleTodo />
+
       <h3>Custom Hook:: use fetch</h3>
       <span>Note:: Combination of other hooks and logics, starts with 'use', can reside in a separate file</span>
       <UseFetchComponent />
+
+      <h3>Another custom hook usestate and local storage</h3>
+      <UseLocalStorageComponent/>
     </div>
   );
 }
