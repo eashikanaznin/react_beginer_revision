@@ -109,7 +109,7 @@ export default function LoginForm() {
         type="email2"
         id="email2"
         value={mailVal2}
-        onChange={checkMailError2}
+        onChange={checkMailError2(e)}
       />
       {hasMailError2 && <div className="msg">{mailErrorMsg2}</div>}
 
