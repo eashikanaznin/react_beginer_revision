@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
 
-      {/* <TodoList isChecked>Complete study</TodoList>
+      <TodoList isChecked>Complete study</TodoList>
       <TodoList> Complete test</TodoList>
       <TodoListClass />
 
@@ -56,7 +56,7 @@ function App() {
       <UseFetchComponent />
 
       <h3>Another custom hook usestate and local storage</h3>
-      <UseLocalStorageComponent/> */}
+      <UseLocalStorageComponent/>
 
       <h3>Form Project</h3>
       <LoginForm/>
